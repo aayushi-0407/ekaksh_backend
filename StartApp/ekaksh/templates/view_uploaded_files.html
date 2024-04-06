@@ -1,0 +1,16 @@
+<!-- view_uploaded_files.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uploaded Files</title>
+</head>
+<body>
+    <h2>Uploaded Files</h2>
+    <ul>
+    {% for file in uploaded_files %}
+        <li><a href="{{ file.document.url }}">{{ file.document.name }}</a></li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
